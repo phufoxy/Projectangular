@@ -1,0 +1,74 @@
+.main-content{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.main-content .right-content{
+    margin-top: 80px;
+    width: 40%;
+    float: left;
+}
+.main-content .right-content mat-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 5px;
+}
+.main-content .left-content{
+    margin-top: 80px;
+    width: 60%;
+    float: right;
+}
+.main-content .left-content mat-card{
+    border-radius: 5px;
+   height: 400px;
+   text-align: center;
+}
+
+.main-content .left-content mat-card .example-form mat-form-field{
+    margin-top: 30px;
+    width: 80%;
+   
+}
+.main-content .left-content mat-card img{
+   width: 150px;
+   margin-top: -80px;
+   display: none;
+}
+button{
+    margin-top: 30px;
+    width: 80%;
+    background: blueviolet;
+    font-weight: bold;
+    color: #ffffff;
+}
+h3{
+    color: blueviolet;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .main-content{
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .main-content .right-content{
+        display: none;
+    }
+    .main-content .left-content{
+        margin-top: 80px;
+        width: 100%;
+        float: none;
+    }
+    .main-content .left-content mat-card img{
+       margin: 0 auto;
+       display: block;
+       margin-top: -90px;
+     }
+    
+}
+  
+  

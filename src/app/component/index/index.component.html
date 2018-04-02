@@ -1,0 +1,140 @@
+<header>
+  <div class="container">
+    <div id="branding">
+        <h1><span class="highlight">Professional</span> Swimming Pool</h1>
+
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li><a href="javascript:void(0)" [matMenuTriggerFor]="menu">Services</a></li>
+        <mat-menu #menu="matMenu">
+         <button mat-menu-item>{{username}}</button>
+         <button mat-menu-item (click)="logout()">Logout</button>
+        </mat-menu>
+      </ul>
+    </div>
+  </div>
+</header>
+<section id="showcase" style="background:url('../assets/showcase.jpg') no-repeat 0 -400px;">
+ 
+      <div class="carousel carousel-slider center" data-indicators="true" materialize="carousel" [materializeActions]="carouselActions">
+          <div class="carousel-fixed-item center">
+          </div>
+          <div class="carousel-item red white-text" href="#one!">
+            <img src="../assets/panner2.jpg" width="100%" height="100%">
+          </div>
+          <div class="carousel-item amber white-text" href="#two!">
+            <img src="../assets/panner3.png" width="100%" height="100%">
+          </div>
+          <div class="carousel-item green white-text" href="#three!">
+            <img src="../assets/panner4.jpg" width="100%" height="100%">
+          </div>
+          <div class="carousel-item blue white-text" href="#four!">
+            <img src="../assets/panner5.jpg" width="100%" height="100%">
+          </div>
+          <a class="waves-effect waves-light btn modal-trigger" (click)="prev()" style="position: fixed; left: 0px; top:180px;" >prev</a>
+        <a class="waves-effect waves-light btn modal-trigger" (click)="next()" style="position: fixed; right: 0px; top:180px;" >next</a>
+        </div>  
+  
+</section>
+<section id="newsletter">
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="input-field col s6">
+              <input placeholder="Enter Username..." type="text" name="email" id="email" ngModel class="validate" required>
+              <!-- <input  placeholder="Username" name="email" id="email" class="validate" ngModel required> -->
+              <label for="first_name">UserName</label>
+           </div>
+           <button mat-raised-button color="Login" type="submit" class="button_1">Tìm Kiếm</button>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        </mat-expansion-panel>
+      </mat-accordion>
+</section>
+<section id="boxes">
+  <div class="container">
+    <div class="box">
+      <img src="../assets/chilren.jpg" alt="Logo">
+      <h3>Lớp Trẻ Em </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+    </div>
+    <div class="box">
+        <img src="../assets/logo_css.png" alt="Logo">
+        <h3>CSS3 Styling</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+      </div>
+      <div class="box">
+          <img src="../assets/logo_brush.png" alt="Logo">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+            <img src="../assets/logo_html.png" alt="Logo">
+            <h3>HTML Markup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+          <div class="box">
+              <img src="../assets/logo_css.png" alt="Logo">
+              <h3>CSS3 Styling</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+            <div class="box">
+                <img src="../assets/logo_brush.png" alt="Logo">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+              </div>
+              <div class="box">
+                  <img src="../assets/logo_html.png" alt="Logo">
+                  <h3>HTML Markup</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                </div>
+                <div class="box">
+                    <img src="../assets/logo_css.png" alt="Logo">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                  </div>
+                  <div class="box">
+                      <img src="../assets/logo_brush.png" alt="Logo">
+                      <h3>Graphic Design</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                    </div>
+  </div>
+</section>
+
+<section id="upscroll">
+    <img src="../assets/icontop.png" alt="Icon Top">
+  </section>
+
+  <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Menu Footer</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Service 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>

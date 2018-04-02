@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="right-content">
+    <mat-card style="background-image: url('../assets/cycle.jpg')">
+      <mat-card-content>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="left-content">
+      <mat-card>
+        <mat-card-content>
+          <img src="../assets/hinh2.png" alt="hinh login">
+            <form class="example-form" #loginForm="ngForm" (submit)="login(loginForm)">
+                <div class="input-field col s6">
+                    <input placeholder="Enter Username..." type="text" name="email" id="email" ngModel class="validate">
+                    <!-- <input  placeholder="Username" name="email" id="email" class="validate" ngModel required> -->
+                    <label for="first_name">UserName</label>
+                 </div>
+                 <div class="input-field col s6">
+                    <input placeholder="Enter Password.." type="password" name="password" id="password" ngModel class="validate">
+                    <!-- <input  placeholder="Username" name="email" id="email" class="validate" ngModel required> -->
+                    <label for="first_name">UserName</label>
+                 </div>
+                 <div class="input-field col s6">
+                    <input placeholder="Placeholder" type="text" class="validate">
+                    <!-- <input  placeholder="Username" name="email" id="email" class="validate" ngModel required> -->
+                    <label for="first_name">UserName</label>
+                 </div>               
+                    <button mat-raised-button color="Login" type="submit">Login</button>
+              </form>
+             
+              <h3>Forget password,if you forget...</h3>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>
